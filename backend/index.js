@@ -22,7 +22,7 @@ mongoose
 
 app.use(cors(
   {
-    origin:["https://seller-theta.vercel.app/"],
+    origin:["https://seller-theta.vercel.app"],
     methods:["POST","GET","PUT","DELETE","PATCH"],
     credentials:true
   }
