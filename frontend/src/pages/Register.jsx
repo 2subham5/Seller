@@ -32,7 +32,7 @@ const Register = () => {
           setError("Passwords donot match")
         } else {
            try{
-            const response = await axios.post('http://localhost:3000/api/auth/register', {
+            const response = await axios.post('https://seller-api-zeta.vercel.app/api/auth/register', {
               username,
               email,
               password
