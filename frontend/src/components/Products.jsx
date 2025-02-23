@@ -7,34 +7,34 @@ const Products = ({cat,filters,sort}) => {
   const [products,setProducts]= useState([]);
   const [filteredProducts, setFilteredProducts] = useState([])
 
-  // useEffect(()=>{
-  //   const getProducts = async ()=>{
-  //     try{ // if not cat then home page
-  //       const res = await axios.get(
-  //         cat
-  //         ? `https://e-commerce-2-sigma.vercel.app/api/products?category=${cat}`
-  //         : "https://e-commerce-2-sigma.vercel.app/api/products"
-  //       );
-       
-  //      setProducts(res.data)
-  //     }catch(err){
-        
-  //     }
-  //   }
-  //   getProducts()
-  // },[cat])
-
   useEffect(()=>{
-    const getProducts = async()=>{
-      try{
-         const res = await axios.get(cat?`http://localhost:3000/api/products?category=${cat}`:"http://localhost:3000/api/products");
-         setProducts(res.data)
+    const getProducts = async ()=>{
+      try{ // if not cat then home page
+        const res = await axios.get(
+          cat
+          ? `https://necessay-2subham5s-projects.vercel.app/api/products?category=${cat}`
+          : "https://necessay-2subham5s-projects.vercel.app/api/products"
+        );
+       
+       setProducts(res.data)
+      }catch(err){
+        
       }
-      catch(err){
-      }
-    };
-    getProducts();
+    }
+    getProducts()
   },[cat])
+
+  // useEffect(()=>{
+  //   const getProducts = async()=>{
+  //     try{
+  //        const res = await axios.get(cat?`http://localhost:3000/api/products?category=${cat}`:"http://localhost:3000/api/products");
+  //        setProducts(res.data)
+  //     }
+  //     catch(err){
+  //     }
+  //   };
+  //   getProducts();
+  // },[cat])
 
   useEffect(() => {
     if (cat) {

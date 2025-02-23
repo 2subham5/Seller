@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const BASE_URL = "http://localhost:3000/api/"
+const BASE_URL = "https://necessay-2subham5s-projects.vercel.app/api/"
 const TOKEN ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjgzNTUyM2JkMDZiZjUwMjEzNTc2YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTc0MDIwNjA4OSwiZXhwIjoxNzQwNDY1Mjg5fQ.JHRPQyT9GrYwrfjeSoOZ2BXiwpzm9WVkskYvniuatRw"
 
 // for fetching data
