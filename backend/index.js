@@ -27,7 +27,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization'], // Ensure required headers are allowed
   credentials: true
 }));
-
+app.options('*', cors());
 app.use(express.json());
 app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
