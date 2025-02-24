@@ -20,11 +20,14 @@ mongoose
     console.log(err);
   });
 
-  app.use(cors({
-    origin: 'https://seller-app-five.vercel.app', // Allow requests from your frontend
-    methods: 'GET,POST,PUT,DELETE', // Specify allowed methods
-    credentials: true // If using cookies or authentication
-  }));
+
+app.use(cors({
+  origin: 'https://seller-app-five.vercel.app',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'], // Include OPTIONS for preflight requests
+  allowedHeaders: ['Content-Type', 'Authorization'], // Ensure required headers are allowed
+  credentials: true
+}));
+
 app.use(express.json());
 app.use("/api/user", userRoute);
 app.use("/api/auth", authRoute);
