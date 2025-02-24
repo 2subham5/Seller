@@ -17,7 +17,7 @@ const Pay = () => {
           const makeRequest = async ()=>{
             try{
                const res = await axios.post(
-                "https://e-commerce-2-sigma.vercel.app/api/checkout/payment",
+                "https://necessay-2subham5s-projects.vercel.app/api/checkout/payment",
                 {
                     tokenId:stripeToken.id,
                     amount:total *100,

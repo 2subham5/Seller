@@ -21,11 +21,6 @@ mongoose
   });
 
 app.use(cors(
-  {
-    origin:["https://seller-theta.vercel.app"],
-    methods:["POST","GET","PUT","DELETE","PATCH"],
-    credentials:true
-  }
 ));
 app.use(express.json());
 app.use("/api/user", userRoute);
