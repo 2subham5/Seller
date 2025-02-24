@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const BASE_URL = "https://seller-api-zeta.vercel.app/api/"
+const BASE_URL = "https://seller-api-jade.vercel.app/api/"
 const TOKEN ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3YjgzNTUyM2JkMDZiZjUwMjEzNTc2YSIsImlzQWRtaW4iOnRydWUsImlhdCI6MTc0MDIwNjA4OSwiZXhwIjoxNzQwNDY1Mjg5fQ.JHRPQyT9GrYwrfjeSoOZ2BXiwpzm9WVkskYvniuatRw"
 
 // for fetching data
